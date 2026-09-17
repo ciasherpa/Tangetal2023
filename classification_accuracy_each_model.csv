@@ -1,0 +1,56 @@
+,test_accuracy,test_confx,test_confx_report,train_accuracy,train_confx,train_confx_report
+0,"[LogisticRegression(max_iter=100000), 0.6989194499017681]","      0     1
+0  2393  1133
+1    93   453","              precision    recall  f1-score      support
+0              0.962591  0.678673  0.796075  3526.000000
+1              0.285624  0.829670  0.424953   546.000000
+accuracy       0.698919  0.698919  0.698919     0.698919
+macro avg      0.624107  0.754172  0.610514  4072.000000
+weighted avg   0.871819  0.698919  0.746312  4072.000000","[LogisticRegression(max_iter=100000), 0.7767509727626459]","      0     1
+0  5645  2579
+1  1093  7131","              precision    recall  f1-score       support
+0              0.837786  0.686406  0.754578   8224.000000
+1              0.734398  0.867096  0.795249   8224.000000
+accuracy       0.776751  0.776751  0.776751      0.776751
+macro avg      0.786092  0.776751  0.774914  16448.000000
+weighted avg   0.786092  0.776751  0.774914  16448.000000"
+1,"[RandomForestClassifier(n_estimators=2000, oob_score=True, random_state=1), 0.875]","      0    1
+0  3242  284
+1   225  321","              precision    recall  f1-score   support
+0              0.935102  0.919455  0.927213  3526.000
+1              0.530579  0.587912  0.557776   546.000
+accuracy       0.875000  0.875000  0.875000     0.875
+macro avg      0.732840  0.753684  0.742494  4072.000
+weighted avg   0.880861  0.875000  0.877676  4072.000","[RandomForestClassifier(n_estimators=2000, oob_score=True, random_state=1), 1.0]","      0     1
+0  8224     0
+1     0  8224","              precision  recall  f1-score  support
+0                   1.0     1.0       1.0   8224.0
+1                   1.0     1.0       1.0   8224.0
+accuracy            1.0     1.0       1.0      1.0
+macro avg           1.0     1.0       1.0  16448.0
+weighted avg        1.0     1.0       1.0  16448.0"
+2,"[VotingClassifier(estimators=[('LogReg', LogisticRegression(max_iter=100000)),
+                             ('RF',
+                              RandomForestClassifier(n_estimators=2000,
+                                                     oob_score=True,
+                                                     random_state=1))],
+                 n_jobs=-1, voting='soft'), 0.8293222003929273]","      0    1
+0  2982  544
+1   151  395","              precision    recall  f1-score      support
+0              0.951803  0.845718  0.895630  3526.000000
+1              0.420660  0.723443  0.531987   546.000000
+accuracy       0.829322  0.829322  0.829322     0.829322
+macro avg      0.686232  0.784580  0.713808  4072.000000
+weighted avg   0.880584  0.829322  0.846870  4072.000000","[VotingClassifier(estimators=[('LogReg', LogisticRegression(max_iter=100000)),
+                             ('RF',
+                              RandomForestClassifier(n_estimators=2000,
+                                                     oob_score=True,
+                                                     random_state=1))],
+                 n_jobs=-1, voting='soft'), 0.9752553501945526]","      0     1
+0  7915   309
+1    98  8126","              precision    recall  f1-score       support
+0              0.987770  0.962427  0.974934   8224.000000
+1              0.963367  0.988084  0.975569   8224.000000
+accuracy       0.975255  0.975255  0.975255      0.975255
+macro avg      0.975568  0.975255  0.975251  16448.000000
+weighted avg   0.975568  0.975255  0.975251  16448.000000"
